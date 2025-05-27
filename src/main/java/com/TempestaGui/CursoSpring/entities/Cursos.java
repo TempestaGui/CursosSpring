@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "Tb_cursos")
+@Table(name = "Tb_curso")
 public class Cursos {
 
     @Id
@@ -14,15 +14,13 @@ public class Cursos {
     private String nome;
     private String descricao;
     private Integer cargaHoraria;
-    private String professor;
 
     public Cursos() {
     }
-    public Cursos(String nome, String descricao, Integer cargaHoraria, String professor) {
+    public Cursos(String nome, String descricao, Integer cargaHoraria) {
         this.nome = nome;
         this.descricao = descricao;
         this.cargaHoraria = cargaHoraria;
-        this.professor = professor;
     }
 
     public String getNome() {
@@ -47,14 +45,6 @@ public class Cursos {
 
     public void setCargaHoraria(Integer cargaHoraria) {
         this.cargaHoraria = cargaHoraria;
-    }
-
-    public String getProfessor() {
-        return professor;
-    }
-
-    public void setProfessor(String professor) {
-        this.professor = professor;
     }
 
     @Override
