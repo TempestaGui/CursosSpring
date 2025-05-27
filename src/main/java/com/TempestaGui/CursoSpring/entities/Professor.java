@@ -5,8 +5,8 @@ import jakarta.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "tb_aluno")
-public class Aluno {
+@Table(name = "tb_professor")
+public class Professor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,25 +14,23 @@ public class Aluno {
     private String nome;
     private Integer matricula;
     private Integer idade;
-    private String curso;
-    private Integer semestre;
+    private String materias;
     private String email;
     private String telefone;
     private String cidade;
 
-    public Aluno() {}
+    public Professor() {}
 
-    public Aluno(Long id, String nome, Integer matricula, Integer idade, String curso, Integer semestre,
-                 String email, String telefone, String cidade) {
+    public Professor(Long id, String cidade, String telefone, String email, String materias,
+                     Integer idade, Integer matricula, String nome) {
         this.id = id;
-        this.nome = nome;
-        this.matricula = matricula;
-        this.idade = idade;
-        this.curso = curso;
-        this.semestre = semestre;
-        this.email = email;
-        this.telefone = telefone;
         this.cidade = cidade;
+        this.telefone = telefone;
+        this.email = email;
+        this.materias = materias;
+        this.idade = idade;
+        this.matricula = matricula;
+        this.nome = nome;
     }
 
     public Long getId() {
@@ -57,14 +55,6 @@ public class Aluno {
 
     public void setMatricula(Integer matricula) {
         this.matricula = matricula;
-    }
-
-    public String getCurso() {
-        return curso;
-    }
-
-    public void setCurso(String curso) {
-        this.curso = curso;
     }
 
     public String getEmail() {
@@ -102,20 +92,13 @@ public class Aluno {
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        Aluno aluno = (Aluno) o;
-        return Objects.equals(matricula, aluno.matricula);
+        Professor professor = (Professor) o;
+        return Objects.equals(matricula, professor.matricula);
     }
 
     @Override
     public int hashCode() {
         return Objects.hashCode(matricula);
     }
-
-    public Integer getSemestre() {
-        return semestre;
-    }
-
-    public void setSemestre(Integer semestre) {
-        this.semestre = semestre;
-    }
 }
+
