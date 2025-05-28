@@ -13,6 +13,7 @@ public class Professor {
     private Long id;
     private String nome;
     private Integer matricula;
+    private String materia;
     private Integer idade;
     private String email;
     private String telefone;
@@ -20,10 +21,11 @@ public class Professor {
 
     public Professor() {}
 
-    public Professor(Long id, String nome, Integer matricula, Integer idade, String email, String telefone, String cidade) {
+    public Professor(Long id, String nome, Integer matricula,String materia ,Integer idade, String email, String telefone, String cidade) {
         this.id = id;
         this.nome = nome;
         this.matricula = matricula;
+        this.materia = materia;
         this.idade = idade;
         this.email = email;
         this.telefone = telefone;
@@ -52,6 +54,14 @@ public class Professor {
 
     public void setMatricula(Integer matricula) {
         this.matricula = matricula;
+    }
+
+    public String getMateria() {
+        return materia;
+    }
+
+    public void setMateria(String materia) {
+        this.materia = materia;
     }
 
     public String getEmail() {
