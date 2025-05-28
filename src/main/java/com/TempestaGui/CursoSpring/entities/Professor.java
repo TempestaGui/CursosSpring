@@ -14,20 +14,17 @@ public class Professor {
     private String nome;
     private Integer matricula;
     private Integer idade;
-    private String materia;
     private String email;
     private String telefone;
     private String cidade;
 
     public Professor() {}
 
-    public Professor(Long id, String cidade, String telefone, String email, String materia,
                      Integer idade, Integer matricula, String nome) {
         this.id = id;
         this.cidade = cidade;
         this.telefone = telefone;
         this.email = email;
-        this.materia = materia;
         this.idade = idade;
         this.matricula = matricula;
         this.nome = nome;
@@ -87,14 +84,6 @@ public class Professor {
 
     public void setIdade(Integer idade) {
         this.idade = idade;
-    }
-
-    public String getMateria() {
-        return materia;
-    }
-
-    public void setMateria(String materia) {
-        this.materia = materia;
     }
 
     @Override
