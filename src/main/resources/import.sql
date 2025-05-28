@@ -21,6 +21,18 @@ INSERT INTO tb_professor (nome, matricula, idade, materia, email, telefone, cida
 INSERT INTO tb_professor (nome, matricula, idade, materia, email, telefone, cidade) VALUES ('André', '018899', '35', 'Segurança da Informação', 'andre.lima@email.com', '991788899', 'Natal');
 
 
+INSERT INTO tb_curso (nome, descricao, carga_horaria) values ('Programacao Java', 'Curso de introducao a linguagem Java', '60');
+INSERT INTO tb_curso (nome, descricao, carga_horaria) VALUES ('Estrutura de Dados', 'Trabalha com listas, pilhas, filas e árvores', '80');
+INSERT INTO tb_curso (nome, descricao, carga_horaria) VALUES ('Banco de Dados', 'Conceitos de modelagem e SQL com MySQL', '70');
+INSERT INTO tb_curso (nome, descricao, carga_horaria) VALUES ('Redes de Computadores', 'Estuda protocolos e camadas de rede', '50');
+INSERT INTO tb_curso (nome, descricao, carga_horaria) VALUES ('Desenvolvimento Web', 'HTML, CSS, JavaScript e backend com Spring', '9');
+
+
+
+
+
+
+
 
 
 

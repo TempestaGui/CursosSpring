@@ -20,14 +20,14 @@ public class Professor {
 
     public Professor() {}
 
-                     Integer idade, Integer matricula, String nome) {
+    public Professor(Long id, String nome, Integer matricula, Integer idade, String email, String telefone, String cidade) {
         this.id = id;
-        this.cidade = cidade;
-        this.telefone = telefone;
-        this.email = email;
-        this.idade = idade;
-        this.matricula = matricula;
         this.nome = nome;
+        this.matricula = matricula;
+        this.idade = idade;
+        this.email = email;
+        this.telefone = telefone;
+        this.cidade = cidade;
     }
 
     public Long getId() {
