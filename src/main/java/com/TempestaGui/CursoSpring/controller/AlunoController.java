@@ -25,7 +25,6 @@ public class AlunoController {
 
     @GetMapping(value = "/{id}")
     public AlunoMinDto findById(@PathVariable Long id){
-        AlunoMinDto result = alunoService.findAlunoById(id);
-        return result;
+        return alunoService.findAlunoById(id);
     }
 }
