@@ -17,7 +17,8 @@ public class Cursos {
 
     public Cursos() {
     }
-    public Cursos(String nome, String descricao, Integer cargaHoraria) {
+    public Cursos(Long id, String nome, String descricao, Integer cargaHoraria) {
+        this.id = id;
         this.nome = nome;
         this.descricao = descricao;
         this.cargaHoraria = cargaHoraria;
