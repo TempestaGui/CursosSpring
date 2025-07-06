@@ -1,13 +1,13 @@
 package com.TempestaGui.CursoSpring.Dto;
 
 import com.TempestaGui.CursoSpring.entities.Aluno;
+import com.TempestaGui.CursoSpring.projections.AlunoMinProjection;
 
 public class AlunoMinDto {
     private Long id;
     private String nome;
     private Integer matricula;
     private String curso;
-    private String email;
 
     public AlunoMinDto(){
     }
@@ -17,7 +17,12 @@ public class AlunoMinDto {
         nome = Entity.getNome();
         matricula = Entity.getMatricula();
         curso = Entity.getCurso();
-        email = Entity.getEmail();
+    }
+    public AlunoMinDto(AlunoMinProjection Projection) {
+        id = Projection.getId();
+        nome = Projection.getNome();
+        matricula = Projection.getMatricula();
+        curso = Projection.getCurso();
     }
     public Long getId() {
         return id;
@@ -42,12 +47,6 @@ public class AlunoMinDto {
     }
     public void setCurso(String curso) {
         this.curso = curso;
-    }
-    public String getEmail() {
-        return email;
-    }
-    public void setEmail(String email) {
-        this.email = email;
     }
 
 }

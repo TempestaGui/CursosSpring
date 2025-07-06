@@ -1,13 +1,13 @@
-INSERT INTO tb_aluno (nome, matricula, idade, curso, semestre, email, telefone, cidade) VALUES ('Guilherme', '236567', '21', 'Desenvolvimento de games', '5', 'Guilherme@gmail', '991753456', 'brasilia');
-INSERT INTO tb_aluno (nome, matricula, idade, curso, semestre, email, telefone, cidade) VALUES ('Gustavo', '753567', '31', 'Ciencia da Computaçao', '2', 'Gustavo@gmail', '991734353', 'brasilia');
-INSERT INTO tb_aluno (nome, matricula, idade, curso, semestre, email, telefone, cidade) VALUES ('Gabriela', '653567', '28', 'Direito', '1', 'Gabriela@gmail', '991755768', 'brasilia');
-INSERT INTO tb_aluno (nome, matricula, idade, curso, semestre, email, telefone, cidade) VALUES ('Mateus', '345567', '45', 'Medicina', '7', 'Mateus@gmail', '991723456', 'brasilia');
-INSERT INTO tb_aluno (nome, matricula, idade, curso, semestre, email, telefone, cidade) VALUES ('Lazaro', '143267', '25', 'Farmacia', '4', 'Lazaro@gmail', '991712345', 'brasilia');
-INSERT INTO tb_aluno (nome, matricula, idade, curso, semestre, email, telefone, cidade) VALUES ('Michael', '565567', '23', 'Engenharia', '2', 'Michael@gmail', '991712345', 'brasilia');
-INSERT INTO tb_aluno (nome, matricula, idade, curso, semestre, email, telefone, cidade) VALUES ('Renata', '565568', '22', 'Medicina', '3', 'Renata@gmail', '991745678', 'são paulo');
-INSERT INTO tb_aluno (nome, matricula, idade, curso, semestre, email, telefone, cidade) VALUES ('Carlos', '565569', '24', 'Arquitetura', '4', 'Carlos@gmail', '991723456', 'rio de janeiro');
-INSERT INTO tb_aluno (nome, matricula, idade, curso, semestre, email, telefone, cidade) VALUES ('Beatriz', '565570', '21', 'Direito', '5', 'Beatriz@gmail', '991756789', 'salvador');
-INSERT INTO tb_aluno (nome, matricula, idade, curso, semestre, email, telefone, cidade) VALUES ('João Pedro', '565571', '20', 'Design Gráfico', '1', 'JoaoPedro@gmail', '991798765', 'curitiba');
+INSERT INTO tb_aluno (nome, matricula, idade, curso, semestre, email, telefone, cidade) VALUES ('Guilherme', '236567', '21', 'Programacao Java', '5', 'Guilherme@gmail', '991753456', 'brasilia');
+INSERT INTO tb_aluno (nome, matricula, idade, curso, semestre, email, telefone, cidade) VALUES ('Gustavo', '753567', '31', 'Estrutura de Dados', '2', 'Gustavo@gmail', '991734353', 'brasilia');
+INSERT INTO tb_aluno (nome, matricula, idade, curso, semestre, email, telefone, cidade) VALUES ('Gabriela', '653567', '28', 'Estrutura de Dados', '1', 'Gabriela@gmail', '991755768', 'brasilia');
+INSERT INTO tb_aluno (nome, matricula, idade, curso, semestre, email, telefone, cidade) VALUES ('Mateus', '345567', '45', 'Programacao Java', '7', 'Mateus@gmail', '991723456', 'brasilia');
+INSERT INTO tb_aluno (nome, matricula, idade, curso, semestre, email, telefone, cidade) VALUES ('Lazaro', '143267', '25', 'Estrutura de Dados', '4', 'Lazaro@gmail', '991712345', 'brasilia');
+INSERT INTO tb_aluno (nome, matricula, idade, curso, semestre, email, telefone, cidade) VALUES ('Michael', '565567', '23', 'Programacao Java', '2', 'Michael@gmail', '991712345', 'brasilia');
+INSERT INTO tb_aluno (nome, matricula, idade, curso, semestre, email, telefone, cidade) VALUES ('Renata', '565568', '22', 'Programacao Java', '3', 'Renata@gmail', '991745678', 'são paulo');
+INSERT INTO tb_aluno (nome, matricula, idade, curso, semestre, email, telefone, cidade) VALUES ('Carlos', '565569', '24', 'Estrutura de Dados', '4', 'Carlos@gmail', '991723456', 'rio de janeiro');
+INSERT INTO tb_aluno (nome, matricula, idade, curso, semestre, email, telefone, cidade) VALUES ('Beatriz', '565570', '21', 'Programacao Java', '5', 'Beatriz@gmail', '991756789', 'salvador');
+INSERT INTO tb_aluno (nome, matricula, idade, curso, semestre, email, telefone, cidade) VALUES ('João Pedro', '565571', '20', 'Estrutura de Dados', '1', 'JoaoPedro@gmail', '991798765', 'curitiba');
 
 INSERT INTO tb_professor (nome, matricula, idade, materia, email, telefone, cidade) VALUES ('Renata', '236890', '34', 'Matemática', 'renata.silva@email.com', '991711223', 'São Paulo');
 INSERT INTO tb_professor (nome, matricula, idade, materia, email, telefone, cidade) VALUES ('Thiago', '753891', '40', 'História', 'thiago.santos@email.com', '991744556', 'Curitiba');
@@ -23,9 +23,18 @@ INSERT INTO tb_professor (nome, matricula, idade, materia, email, telefone, cida
 
 INSERT INTO tb_curso (nome, descricao, carga_horaria) values ('Programacao Java', 'Curso de introducao a linguagem Java', '60');
 INSERT INTO tb_curso (nome, descricao, carga_horaria) VALUES ('Estrutura de Dados', 'Trabalha com listas, pilhas, filas e árvores', '80');
-INSERT INTO tb_curso (nome, descricao, carga_horaria) VALUES ('Banco de Dados', 'Conceitos de modelagem e SQL com MySQL', '70');
-INSERT INTO tb_curso (nome, descricao, carga_horaria) VALUES ('Redes de Computadores', 'Estuda protocolos e camadas de rede', '50');
-INSERT INTO tb_curso (nome, descricao, carga_horaria) VALUES ('Desenvolvimento Web', 'HTML, CSS, JavaScript e backend com Spring', '9');
+
+INSERT INTO tb_aluno_curso(id_aluno, id_curso, position, nota) VALUES('1', '1', '0', '6.50');
+INSERT INTO tb_aluno_curso(id_aluno, id_curso, position, nota) VALUES('4', '1', '1', '9.21');
+INSERT INTO tb_aluno_curso(id_aluno, id_curso, position, nota) VALUES('6', '1', '2', '5.32');
+INSERT INTO tb_aluno_curso(id_aluno, id_curso, position, nota) VALUES('7', '1', '3', '5.32');
+INSERT INTO tb_aluno_curso(id_aluno, id_curso, position, nota) VALUES('9', '1', '4', '5.32');
+
+INSERT INTO tb_aluno_curso(id_aluno, id_curso, position, nota) VALUES('5', '2', '0', '1.75');
+INSERT INTO tb_aluno_curso(id_aluno, id_curso, position, nota) VALUES('3', '2', '1', '8.23');
+INSERT INTO tb_aluno_curso(id_aluno, id_curso, position, nota) VALUES('2', '2', '2', '7.00');
+INSERT INTO tb_aluno_curso(id_aluno, id_curso, position, nota) VALUES('8', '2', '3', '5.32');
+INSERT INTO tb_aluno_curso(id_aluno, id_curso, position, nota) VALUES('10', '2', '4', '5.32');
 
 
 

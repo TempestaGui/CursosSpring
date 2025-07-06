@@ -15,10 +15,10 @@ public class AlunoCursoBelonging {
     @EmbeddedId
     private AlunoCursoBelongingPK id = new AlunoCursoBelongingPK();
     private Integer position;
-    private Integer nota;
+    private double nota;
 
     public AlunoCursoBelonging() {}
-    public AlunoCursoBelonging(Aluno aluno, Cursos cursos, Integer position, Integer nota) {
+    public AlunoCursoBelonging(Aluno aluno, Cursos cursos, Integer position, double nota) {
         this.id.setAluno(aluno);
         this.id.setCursos(cursos);
         this.position = position;
@@ -41,11 +41,11 @@ public class AlunoCursoBelonging {
         this.position = position;
     }
 
-    public Integer getNota() {
+    public double getNota() {
         return nota;
     }
 
-    public void setNota(Integer nota) {
+    public void setNota(double nota) {
         this.nota = nota;
     }
 
